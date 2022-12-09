@@ -73,10 +73,7 @@
         }
         h += '        </DL><p>\n';
         htmlData += h;
-        let bookmark = new Object;
-        bookmark.category = category;
-        bookmark.list = list;
-        jsonData[i] = bookmark;
+        jsonData[category] = list;
       }
     }
     htmlData += '</DL><p>';
